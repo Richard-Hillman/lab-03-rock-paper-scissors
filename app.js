@@ -17,11 +17,23 @@ let wins = 0;
 let losses = 0;
 let draws = 0;
 
+// EventListener for when button is pressed -------------------------------------------
+
+
+
+startButton.addEventListener('click', {
+
+    const randomThrow = goComputer()
+    const checkeRadioBdutton = document.querySelector(':checked');
+    const userPick = checkedRadioButton.value
+    
+    
+
+})
 // ------------------------------------------------------------------------------------
 // set event listeners to update state and DOM
 
 function doesUserWin(userPick, computer) {
-    
     if ( userPick === computer ) {
         return "TIED";
     }
@@ -62,32 +74,10 @@ function doesUserWin(userPick, computer) {
         }
     }
 
-
-
-
 }
 
 
 
-// EventListener for when button is pressed -------------------------------------------
-
-
-
-startButton.addEventListener('click', {
-
-    const randomThrow = goComputer()
-    const checkedRadioButton = document.querySelector(':checked');
-    const userPicked = checkedRadioButton.value
-    
-    is (doesUserWin(userPicked, randomThrow)) {
-
-        wins++
-        total++
-
-
-    }
-
-})
 
 
 
