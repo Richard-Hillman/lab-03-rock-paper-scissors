@@ -9,80 +9,93 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <title>Rock Paper Scissors By Richard Hillman</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div>
+
     </header>
 
 <!-- Header -------------------------------------------------------------------->
 
     <main>
-        <section>
+        <section class='instruct'>
             <!-- Instructions ------------------------------------------------------>
-
+            Welcome to grenade, TP, and KA-BAR. Choose your class, test your fate. 
         </section>
 
-        <section>
-            <!-- computer choice AKA Random throw function ------------------------->
-
-        </section>
-
-        <section>
- 
+        <section class='row-pictures'>
 
             <!-- rock -------------------------------------------------------------->
                 <label>
-                    <input type='radio' name='rps-family' value='select-rock' checked />            
-                    <img src=''>
-                    Rock
+                    <input type='radio' name='rps-family' value='rock' checked />            
+                    <img src='./assets/grenade.jpg'>
+                    
                 </label>
+
+                <br>
+                <br>
 
             <!-- paper ------------------------------------------------------------->
                 <label>
-                    <input type='radio' name='rps-family' value='select-paper'/>   
-                    <img src=''>
-                    Paper
+                    <input type='radio' name='rps-family' value='paper'/>   
+                    <img src='./assets/paper.jpg'>
+                    
                 </label>
+
+                <br>
+                <br>
+        
 
             <!-- scissor ----------------------------------------------------------->
                 <label>
-                    <input type='radio' name='rps-family' value='select-scissors'/>   
-                    <img src=''>
-                    scissor
+                    <input id='knife' type='radio' name='rps-family' value='scissors'/>   
+                    <img src='./assets/knife.jpg'>
+                    
                 </label>
 
-            <!--Button ------------------------------------------------------------->
+                <br>
+                <br>
+        </section>
 
-                <button id='shoot-button'>Shoot!</button>
+        <section class='beneath'>
 
+            
             <!-- result-------------------------------------------------------------->
-
-                <span id='what-happened'></span>
-
+            
+            <span id='what-happened'></span>
+            
             <!-- wins -------------------------------------------------------------->
-
-                <p>
-                    Wins:<span id='win-tracker'></span>
-
-                </p>    
+            
+            <p>
+                <h3>WINS:</h3><span id='win-tracker'>0</span>
+                
+            </p>    
 
             <!-- losses ------------------------------------------------------------>
+            
+            <p>
+                <h3>LOSSES:</h3><span id='loss-tracker'>0</span>
                 
-                <p>
-                    Losses:<span id='loss-tracker'></span>
-
-                </p>
+            </p>
             <!-- draws ------------------------------------------------------------->
+            
+            <p>
+                <h3>DRAWS:</h3><span id='draw-tracker'>0</span>
                 
-                <p>
-                    Draws:<span id='draw-tracker'></span>
+            </p>
+            
+            <br>
+<!--Buttons ------------------------------------------------------------->
 
-                </p>
+                <button id='shoot-button'>Shoot!</button>
+                <br>
+
+<!-- RESET------------------------------------------------------------------------------ -->
+
+             
+                <button id='reset'>RESET</button>
 
 
         </section>
